@@ -41,3 +41,6 @@ Segue também uma breve lista dos comandos utilizados:
 docker run -v "[CAMINHO_VOLUME_LOCAL:]CAMINHO_VOLUME_CONTAINER" NOME_DA_IMAGEM - cria um volume no respectivo caminho do container, caso seja especificado um caminho local monta o volume local no volume do container.
 docker inspect ID_CONTAINER - retorna diversas informações sobre o container.
 
+Criando um Dockerfile
+Para rodar o dockerfile:
+docker build -f Dockerfile -t kelvin/node .
