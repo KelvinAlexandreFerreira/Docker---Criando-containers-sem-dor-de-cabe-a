@@ -70,3 +70,6 @@ docker build -f CAMINHO_DOCKERFILE/Dockerfile -t NOME_USUARIO/NOME_IMAGEM - cons
 docker login - inicia o processo de login no Docker Hub.
 docker push NOME_USUARIO/NOME_IMAGEM - envia a imagem criada para o Docker Hub.
 docker pull NOME_USUARIO/NOME_IMAGEM - baixa a imagem desejada do Docker Hub.
+
+** Só é possível acessar um container pelo nome de rede quando é acessado poir uma rede que eu memsmo criei, pelo comando:
+docker network create --driver bridge minha-rede
