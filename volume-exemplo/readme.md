@@ -44,3 +44,10 @@ docker inspect ID_CONTAINER - retorna diversas informações sobre o container.
 Criando um Dockerfile
 Para rodar o dockerfile:
 docker build -f Dockerfile -t kelvin/node .
+
+Subindo a imagem do Docker Hub
+Comando:
+docker login
+*Adiciona o usuário e senha do dockerhub
+Comando:
+docker push kelvin/node
