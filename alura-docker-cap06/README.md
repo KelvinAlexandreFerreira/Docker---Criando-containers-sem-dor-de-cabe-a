@@ -52,3 +52,16 @@ docker network create --driver bridge NOME_DA_REDE - cria uma rede especificando
 docker-compose build - Realiza o build dos serviços relacionados ao arquivo docker-compose.yml, assim como verifica a sua sintaxe.
 docker-compose up - Sobe todos os containers relacionados ao docker-compose, desde que o build já tenha sido executado.
 docker-compose down - Para todos os serviços em execução que estejam relacionados ao arquivo docker-compose.yml.
+
+# Nessa aula aprendemos:
+
+1. A necessidade de usar o Docker Compose
+2. Configurar o build de vários containers através do docker-compose.yml
+3. subir e parar os containers de maneira coordenada com Docker Compose
+
+# Segue também uma breve lista dos novos comandos utilizados:
+
+1. docker-compose up - sobe os serviços criados
+2. docker-compose down - para os serviços criados.
+3. docker-compose ps - lista os serviços que estão rodando.
+4. docker exec -it alura-books-1 ping node2- executa o comando ping node2 dentro do container alura-books-1
