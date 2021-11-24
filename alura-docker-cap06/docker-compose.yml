@@ -6,7 +6,7 @@ services:
       context: .
     image: douglasq/nginx
     container_name: xginx
-    port:
+    ports:
       - "80:80"
     networks:
       - production-network
@@ -25,8 +25,8 @@ services:
       dockerfile: ./docker/alura-books.dockerfile
       context: .
     image: douglasq/alura-books
-    container_name: alura-books1
-    port:
+    container_name: alura-books-1
+    ports:
       - "3000"
     networks:
       - production-network
@@ -38,8 +38,8 @@ services:
       dockerfile: ./docker/alura-books.dockerfile
       context: .
     image: douglasq/alura-books
-    container_name: alura-books2
-    port:
+    container_name: alura-books-2
+    ports:
       - "3000"
     networks:
       - production-network
@@ -51,8 +51,8 @@ services:
       dockerfile: ./docker/alura-books.dockerfile
       context: .
     image: douglasq/alura-books
-    container_name: alura-books3
-    port:
+    container_name: alura-books-3
+    ports:
       - "3000"
     networks:
       - production-network
